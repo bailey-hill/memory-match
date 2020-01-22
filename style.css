@@ -1,9 +1,52 @@
 .card {
   margin-left: 5px;
+  margin-top: 20px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  background-image: url(./assets/images/lfz-card.jpg);
+  position: relative;
 }
+.card-front, .card-back {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
+.card-back {
+  background-image: url(./assets/images/lfz-card.jpg)
+}
+.js-logo {
+  background-image: url(./assets/images/js-logo.png)
+}
+.css-logo {
+  background-image: url(./assets/images/css-logo.png);
+}
+.docker-logo {
+  background-image: url(./assets/images/docker-logo.jpg);
+}
+.gitHub-logo {
+  background-image: url(./assets/images/gitHub-logo.png);
+}
+.html-logo {
+  background-image: url(./assets/images/html-logo.png);
+}
+.mysql-logo {
+  background-image: url(./assets/images/mysql-logo.jpg);
+}
+.node-logo {
+  background-image: url(./assets/images/node-logo.png);
+}
+.php-logo {
+  background-image: url(./assets/images/php-logo.jpeg);
+}
+.react-logo {
+  background-image: url(./assets/images/react-logo.png);
+}
+
+
 aside {
   display: flex;
   flex-direction: column;
@@ -31,4 +74,8 @@ h1 {
 }
 header {
   width: 100%;
+}
+
+.hidden {
+  display: none;
 }
