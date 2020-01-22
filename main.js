@@ -2,6 +2,9 @@ var firstCardClicked;
 var secondCardClicked;
 var firstCardClasses;
 var secondCardClasses;
+var maxMatch = 9;
+var matches = 0;
+
 
 var gameCards = document.querySelector("#gameCards");
 gameCards.addEventListener("click", handleClick);
@@ -25,6 +28,10 @@ function handleClick(event) {
      gameCards.addEventListener("click", handleClick);
      firstCardClicked = null;
      secondCardClicked = null;
+     matches++;
+     if (maxMatch === matches) {
+       document.querySelector(".modal-overlay").classList.remove("hidden");
+     }
    } else {
 
      setTimeout(function(){
@@ -33,6 +40,7 @@ function handleClick(event) {
     gameCards.addEventListener("click", handleClick);
        firstCardClicked = null;
        secondCardClicked = null;
+
      }, 1500);
 
    }
