@@ -101,3 +101,11 @@ header {
   margin: auto;
   padding: 10px;
 }
+
+button {
+  border-style: dotted;
+  color: white;
+  background-color: black;
+  font-size: x-large;
+  border-color: goldenrod;
+}

@@ -6,6 +6,25 @@ var maxMatch = 9;
 var matches = 0;
 var attempts = 0;
 var gamesPlayed = 0;
+var resetGame;
+
+function resetGame() {
+  document.querySelector("#attempts").textContent = 0;
+  document.querySelector("#accuracy").textContent = 0;
+  document.querySelector("#gamesPlayed").textContent = ++gamesPlayed;
+  resetCards();
+}
+
+function resetCards() {
+  var hiddenCards = document.querySelectorAll(".card-back");
+  for(var i = 0; i < hiddenCards.length; i++) {
+    hiddenCards[i].classList.remove("hidden");
+  }
+  document.querySelector(".modal-overlay").classList.add("hidden");
+}
+
+var button = document.querySelector("#button");
+button.addEventListener("click", resetGame);
 
 var array = [
   "js-logo",
@@ -43,7 +62,7 @@ function shuffle(array) {
     array[j] = temp;
   }
 }
-
+shuffle(array);
 for (i = 0; i < cardFronts.length; i++) {
   cardFronts[i].className += ' ' + array[i];
 }
