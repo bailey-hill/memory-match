@@ -7,6 +7,47 @@ var matches = 0;
 var attempts = 0;
 var gamesPlayed = 0;
 
+var array = [
+  "js-logo",
+  "css-logo",
+  "docker-logo",
+  "gitHub-logo",
+  "html-logo",
+  "mysql-logo",
+  "node-logo",
+  "php-logo",
+  "react-logo",
+  "js-logo",
+  "css-logo",
+  "docker-logo",
+  "gitHub-logo",
+  "html-logo",
+  "mysql-logo",
+  "node-logo",
+  "php-logo",
+  "react-logo"
+]
+
+var cardFronts = document.getElementsByClassName("card-front");
+
+
+
+function shuffle(array) {
+  var i = 0;
+  var j = 0;
+  var temp = null;
+  for (i = array.length - 1; i > 0; i -= 1) {
+    j = Math.floor(Math.random() * (i + 1));
+    temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+}
+
+for (i = 0; i < cardFronts.length; i++) {
+  cardFronts[i].className += ' ' + array[i];
+}
+
 function calculateAccuracy(matches, attempts){
   var x = Math.trunc((matches / attempts) * 100);
   return x + "%";
@@ -40,7 +81,7 @@ function handleClick(event) {
      secondCardClicked = null;
      matches++;
      attempts++;
-     console.log(attempts);
+    //  console.log(attempts);
      displayStats();
      if (maxMatch === matches) {
        document.querySelector(".modal-overlay").classList.remove("hidden");
@@ -54,7 +95,7 @@ function handleClick(event) {
        secondCardClicked = null;
      }, 1500);
      attempts++;
-     console.log(attempts);
+    //  console.log(attempts);
      displayStats();
    }
   //  displayStats();
