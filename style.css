@@ -74,6 +74,7 @@ aside > div {
   color: white;
   border-color: black;
   border-style: solid;
+  font-family: 'El Messiri', sans-serif;
 }
 
 h1 {
@@ -81,6 +82,7 @@ h1 {
   font-size: 35pt;
   display: inline;
   margin-left: 20%;
+  font-family: 'El Messiri', sans-serif;
 }
 header {
   width: 100%;
@@ -124,5 +126,10 @@ button {
 }
 
 header > img {
-  width: 16%;
+  width: 150px;
+}
+
+@font-face {
+  src: url("https://fonts.googleapis.com/css?family=El+Messiri&display=swap");
+  font-family: 'El Messiri', sans-serif;
 }
