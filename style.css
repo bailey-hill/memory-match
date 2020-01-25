@@ -10,6 +10,8 @@
 body {
   /* background-image: url(./assets/images/attachment.jpg); */
   background-image: url(./assets/images/c-o-animated-ionia\ \(1\).gif);
+  background-size: 110%;
+  background-repeat: no-repeat;
 }
 .card-front, .card-back {
   height: 100%;
