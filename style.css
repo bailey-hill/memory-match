@@ -7,7 +7,7 @@
 
   position: relative;
 }
-.container {
+body {
   background-image: url(./assets/images/attachment.jpg);
 }
 .card-front, .card-back {
@@ -74,7 +74,7 @@ aside > div {
   color: white;
   border-color: black;
   border-style: solid;
-  font-family: 'El Messiri', sans-serif;
+  font-family: 'Ruslan Display';
 }
 
 h1 {
@@ -82,7 +82,7 @@ h1 {
   font-size: 35pt;
   display: inline;
   margin-left: 20%;
-  font-family: 'El Messiri', sans-serif;
+  font-family: 'Ruslan Display';
 }
 header {
   width: 100%;
@@ -123,6 +123,7 @@ button {
   border-radius: 10px;
   border-style: none;
   margin-top: 68px;
+  font-family: 'Ruslan Display';
 }
 
 header > img {
@@ -130,6 +131,6 @@ header > img {
 }
 
 @font-face {
-  src: url("https://fonts.googleapis.com/css?family=El+Messiri&display=swap");
-  font-family: 'El Messiri', sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Ruslan+Display&display=swap");
+  font-family: 'Ruslan Display';
 }
