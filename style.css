@@ -8,7 +8,8 @@
   position: relative;
 }
 body {
-  background-image: url(./assets/images/attachment.jpg);
+  /* background-image: url(./assets/images/attachment.jpg); */
+  background-image: url(./assets/images/c-o-animated-ionia\ \(1\).gif);
 }
 .card-front, .card-back {
   height: 100%;
@@ -17,10 +18,14 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
+  border-radius: 15px;
+  background-size: contain;
+  background-color: black;
 }
 .card-back {
   background-image: url(./assets/images/icon.png);
   background-color: black;
+  background-size: 80px;
 }
 .js-logo {
   background-image: url(./assets/images/GarenSquare.png);
@@ -64,12 +69,12 @@ main {
 
 aside > div {
   background-color: rgba(36, 37, 39, 0.521);
-  width: 125px;
+  width: 114px;
   text-align: center;
-  margin: 4px 0px;
-  height: 50px;
+  margin: 2px 0px;
+  /* height: 50px; */
   vertical-align: middle;
-  line-height: 50px;
+  line-height: 24px;
   border-radius: 10px;
   color: white;
   border-color: black;
