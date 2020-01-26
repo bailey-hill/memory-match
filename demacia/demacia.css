@@ -1,0 +1,159 @@
+.card {
+  margin-left: 5px;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  position: relative;
+}
+body {
+  /* background-image: url(./assets/images/attachment.jpg); */
+  background-image: url(../assets/images/ezgif.com-video-to-gif\ \(1\).gif);
+  background-size: 110%;
+  background-repeat: no-repeat;
+}
+.card-front, .card-back {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  border-radius: 15px;
+  background-size: contain;
+  background-color: black;
+}
+.card-back {
+  background-image: url(../assets/images/icon.png);
+  background-color: black;
+  background-size: 80px;
+}
+.js-logo {
+  background-image: url(../assets/images/GarenSquare.png);
+}
+.css-logo {
+  background-image: url(../assets/images/HeimerdingerSquare.png);
+}
+.docker-logo {
+  background-image: url(../assets/images/MissFortuneSquare.png);
+}
+.gitHub-logo {
+  background-image: url(../assets/images/UrgotSquare.png);
+}
+.html-logo {
+  background-image: url(../assets/images/VeigarSquare.png);
+}
+.mysql-logo {
+  background-image: url(../assets/images/WarwickSquare.png);
+}
+.node-logo {
+  background-image: url(../assets/images/AsheSquare.png);
+}
+.php-logo {
+  background-image: url(../assets/images/AhriSquare.png);
+}
+.react-logo {
+  background-image: url(../assets/images/ChoGathSquare.png);
+}
+
+
+aside {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  height: 85%;
+}
+
+aside > div {
+  background-color: rgba(36, 37, 39, 0.521);
+  width: 114px;
+  text-align: center;
+  margin: 2px 0px;
+  /* height: 50px; */
+  vertical-align: middle;
+  line-height: 24px;
+  border-radius: 10px;
+  color: white;
+  border-color: black;
+  border-style: solid;
+  font-family: 'Ruslan Display';
+}
+
+h1 {
+  text-align: center;
+  font-size: 35pt;
+  display: inline;
+  margin-left: 20%;
+  font-family: 'Ruslan Display';
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-overlay {
+  position: fixed;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  width: 84%;
+  z-index: 2;
+  padding-top: 117px;
+  padding-left: 16%;
+  /* position: absolute; */
+}
+.modal-content {
+  background-image: url(./assets/images/haste-league-of-legends-victory.png);
+  color: white;
+  width: 65%;
+  text-align: center;
+  font-size: xx-large;
+  padding: 115px 95px 95px 95px;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+}
+
+#button {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.493);
+  font-size: x-large;
+  border-radius: 10px;
+  border-style: none;
+  margin-top: 68px;
+  font-family: 'Ruslan Display';
+}
+
+.btn {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.493);
+  font-size: x-large;
+  border-radius: 10px;
+  border-style: solid;
+  margin-top: 5px;
+  font-family: 'Ruslan Display';
+
+}
+
+.form-inline {
+   margin-left: 50px;
+}
+
+header > img {
+  width: 150px;
+}
+
+@font-face {
+  src: url("https://fonts.googleapis.com/css?family=Ruslan+Display&display=swap");
+  font-family: 'Ruslan Display';
+}
