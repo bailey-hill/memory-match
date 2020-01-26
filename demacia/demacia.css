@@ -157,3 +157,9 @@ header > img {
   src: url("https://fonts.googleapis.com/css?family=Ruslan+Display&display=swap");
   font-family: 'Ruslan Display';
 }
+
+@media screen (max-width: 768px) {
+  h1 {
+    margin-left: 13%;
+  }
+}
