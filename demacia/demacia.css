@@ -88,13 +88,14 @@ h1 {
   text-align: center;
   font-size: 35pt;
   display: inline;
-  margin-left: 20%;
+  margin-left: 13%;
   font-family: 'Ruslan Display';
+  text-decoration: underline;
 }
 header {
   width: 100%;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
 }
 
 .hidden {
@@ -158,8 +159,21 @@ header > img {
   font-family: 'Ruslan Display';
 }
 
-@media screen (max-width: 768px) {
+/* @media screen (max-width: 768px) {
   h1 {
     margin-left: 13%;
+  }
+} */
+
+
+@media only screen and (min-width: 375px) {
+  body {
+    background-size: cover;
+  }
+  header > img {
+    height: 75px;
+  }
+  .row2 {
+    /* align-items: flex-start; */
   }
 }
