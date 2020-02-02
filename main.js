@@ -13,7 +13,43 @@ function resetGame() {
   document.querySelector("#accuracy").textContent = 0;
   document.querySelector("#gamesPlayed").textContent = ++gamesPlayed;
   resetCards();
+  tick();
 }
+
+// var timer;
+// var output;
+// var game;
+
+// function init(){
+//   game = new Scene();
+//   output = document.getElementById("output");
+//   timer.reset();
+//   game.start();
+// }
+
+// function update(){
+//   game.hide();
+//   currentTime = timer.getElapsedTime();
+//   output.innerHTML = currentTime;
+// }
+
+// function reset(){
+//   timer.reset();
+// }
+
+var secondsLeft = 5;
+function tick() {
+  console.log('tick');
+  secondsLeft -= 1;
+  if (secondsLeft === 0) {
+    document.querySelector(".modal-overlay").classList.remove("hidden");
+  } else {
+    document.getElementById("output").textContent = secondsLeft;
+    window.setTimeout(tick, 1000);
+  }
+};
+//document.addEventListener('DOMContentLoaded',tick,false);
+tick();
 
 function resetCards() {
   var hiddenCards = document.querySelectorAll(".card-back");
