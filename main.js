@@ -13,7 +13,7 @@ function resetGame() {
   document.querySelector("#accuracy").textContent = 0;
   document.querySelector("#gamesPlayed").textContent = ++gamesPlayed;
   resetCards();
-  tick();
+  stopTimer();
 }
 
 // var timer;
@@ -36,8 +36,8 @@ function resetGame() {
 // function reset(){
 //   timer.reset();
 // }
-
-var secondsLeft = 3;
+var timer;
+var secondsLeft = 120;
 function tick() {
   console.log('tick');
   secondsLeft -= 1;
@@ -45,11 +45,18 @@ function tick() {
     document.querySelector(".modal-overlay-defeat").classList.remove("hidden");
   } else {
     document.getElementById("output").textContent = secondsLeft;
-    window.setTimeout(tick, 1000);
+    timer = window.setTimeout(tick, 1000);
   }
 };
 //document.addEventListener('DOMContentLoaded',tick,false);
 tick();
+
+function stopTimer() {
+  clearTimeout(timer);
+  secondsLeft = 120;
+  timer = window.setTimeout(tick, 1000);
+  tick();
+}
 
 function resetCards() {
   var hiddenCards = document.querySelectorAll(".card-back");
