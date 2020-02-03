@@ -9,14 +9,20 @@
 </head>
 
 <body>
-  <div class="modal-overlay hidden">
-    <div class="modal-content">
-      <p> </p>
+    <div class="modal-overlay hidden">
+      <div class="modal-content modal-content-defeat">
+        <p> </p>
+      </div>
       <button id="button">Play again?</button>
     </div>
-  </div>
-  <div class="container">
-    <div class="row1">
+    <div class="hidden modal-overlay-defeat">
+      <div class="modal-content-defeat">
+        <p> </p>
+      </div>
+      <button id="button-defeat">Play again?</button>
+    </div>
+    <div class="container">
+      <div class="row1">
       <header>
         <img src="../assets/images/LeagueofLegends-Logo-LoL-2.png" alt="league icon">
         <h1>
@@ -24,9 +30,9 @@
         </h1>
         <nav class="navbar navbar-light bg-light">
           <form class="form-inline">
-            <a href="../index.html"><button class="btn btn-outline-success" type="button">Ionia</button></a>
-            <a href="demacia.html"><button class="btn btn-outline-success" type="button">Demacia</button></a>
-            <a href="./demacia/demacia.html"><button class="btn btn-outline-success" type="button">Hard</button></a>
+            <a href="../index.html"><button class="btn btn-outline-success" type="button">Easy</button></a>
+            <a href="demacia.html"><button class="btn btn-outline-success" type="button">Medium</button></a>
+            <a href="../bilgewater/bilgewater.html"><button class="btn btn-outline-success" type="button">Hard</button></a>
           </form>
         </nav>
       </header>
@@ -41,6 +47,8 @@
         <div id="attempts">0</div>
         <div>Accuracy</div>
         <div id="accuracy">0%</div>
+        <div>Timer</div>
+        <div id="output">0</div>
       </aside>
       <main class="col-10" id="gameCards">
         <div class="col-2 card">

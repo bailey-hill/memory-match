@@ -13,6 +13,49 @@ function resetGame() {
   document.querySelector("#accuracy").textContent = 0;
   document.querySelector("#gamesPlayed").textContent = ++gamesPlayed;
   resetCards();
+  stopTimer();
+}
+
+// var timer;
+// var output;
+// var game;
+
+// function init(){
+//   game = new Scene();
+//   output = document.getElementById("output");
+//   timer.reset();
+//   game.start();
+// }
+
+// function update(){
+//   game.hide();
+//   currentTime = timer.getElapsedTime();
+//   output.innerHTML = currentTime;
+// }
+
+// function reset(){
+//   timer.reset();
+// }
+var timer;
+var secondsLeft = 60;
+function tick() {
+  console.log('tick');
+  secondsLeft -= 1;
+  if (secondsLeft === 0) {
+    document.querySelector(".modal-overlay-defeat").classList.remove("hidden");
+  } else {
+    document.getElementById("output").textContent = secondsLeft;
+    timer = window.setTimeout(tick, 1000);
+  }
+};
+//document.addEventListener('DOMContentLoaded',tick,false);
+tick();
+
+function stopTimer() {
+  clearTimeout(timer);
+  secondsLeft = 120;
+  timer = window.setTimeout(tick, 1000);
+  tick();
 }
 
 function resetCards() {
@@ -21,10 +64,14 @@ function resetCards() {
     hiddenCards[i].classList.remove("hidden");
   }
   document.querySelector(".modal-overlay").classList.add("hidden");
+  document.querySelector(".modal-overlay-defeat").classList.add("hidden");
 }
 
 var button = document.querySelector("#button");
 button.addEventListener("click", resetGame);
+
+var buttonDefeat = document.querySelector("#button-defeat");
+buttonDefeat.addEventListener("click", resetGame);
 
 var array = [
   "js-logo",

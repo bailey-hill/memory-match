@@ -25,37 +25,38 @@ body {
   background-color: black;
 }
 .card-back {
-  background-image: url(./assets/images/icon.png);
+  background-image: url(../assets/images/icon.png);
   background-color: black;
   background-size: 80px;
 }
 .js-logo {
-  background-image: url(./assets/images/GarenSquare.png);
+  background-image: url(../assets/images/GarenSquare.png);
 }
 .css-logo {
-  background-image: url(./assets/images/HeimerdingerSquare.png);
+  background-image: url(../assets/images/HeimerdingerSquare.png);
 }
 .docker-logo {
-  background-image: url(./assets/images/MissFortuneSquare.png);
+  background-image: url(../assets/images/MissFortuneSquare.png);
 }
 .gitHub-logo {
-  background-image: url(./assets/images/UrgotSquare.png);
+  background-image: url(../assets/images/UrgotSquare.png);
 }
 .html-logo {
-  background-image: url(./assets/images/VeigarSquare.png);
+  background-image: url(../assets/images/VeigarSquare.png);
 }
 .mysql-logo {
-  background-image: url(./assets/images/WarwickSquare.png);
+  background-image: url(../assets/images/WarwickSquare.png);
 }
 .node-logo {
-  background-image: url(./assets/images/AsheSquare.png);
+  background-image: url(../assets/images/AsheSquare.png);
 }
 .php-logo {
-  background-image: url(./assets/images/AhriSquare.png);
+  background-image: url(../assets/images/AhriSquare.png);
 }
 .react-logo {
-  background-image: url(./assets/images/ChoGathSquare.png);
+  background-image: url(../assets/images/ChoGathSquare.png);
 }
+
 
 
 aside {
@@ -101,7 +102,7 @@ header {
 
 
 .modal-overlay {
-  background-image: url(./assets/images/haste-league-of-legends-victory.png);
+  background-image: url(../assets/images/haste-league-of-legends-victory.png);
   position: fixed;
   justify-content: center;
   align-items: center;
@@ -137,7 +138,7 @@ header {
   position: fixed;
   justify-content: center;
   align-items: center;
-  background-image: url(./assets/images/League-of-Legends-Defeat-1.jpg);
+  background-image: url(../assets/images/League-of-Legends-Defeat-1.jpg);
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;

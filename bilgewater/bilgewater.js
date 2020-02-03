@@ -37,7 +37,7 @@ function resetGame() {
 //   timer.reset();
 // }
 var timer;
-var secondsLeft = 100;
+var secondsLeft = 30;
 function tick() {
   console.log('tick');
   secondsLeft -= 1;
@@ -60,7 +60,7 @@ function stopTimer() {
 
 function resetCards() {
   var hiddenCards = document.querySelectorAll(".card-back");
-  for(var i = 0; i < hiddenCards.length; i++) {
+  for (var i = 0; i < hiddenCards.length; i++) {
     hiddenCards[i].classList.remove("hidden");
   }
   document.querySelector(".modal-overlay").classList.add("hidden");
@@ -114,7 +114,7 @@ for (i = 0; i < cardFronts.length; i++) {
   cardFronts[i].className += ' ' + array[i];
 }
 
-function calculateAccuracy(matches, attempts){
+function calculateAccuracy(matches, attempts) {
   var x = Math.trunc((matches / attempts) * 100);
   return x + "%";
 }
@@ -129,42 +129,42 @@ var gameCards = document.querySelector("#gameCards");
 gameCards.addEventListener("click", handleClick);
 
 function handleClick(event) {
-  if(event.target.className.indexOf("card-back") === -1) {
+  if (event.target.className.indexOf("card-back") === -1) {
     return;
   }
   // console.log(event.target);
   event.target.className = "card-back" + " hidden";
- if(!firstCardClicked) {
-   firstCardClicked = event.target;
-   firstCardClasses = firstCardClicked.previousElementSibling.className;
- } else {
-   secondCardClicked = event.target;
-   secondCardClasses = secondCardClicked.previousElementSibling.className;
-   gameCards.removeEventListener("click", handleClick);
-   if(firstCardClasses === secondCardClasses) {
-     gameCards.addEventListener("click", handleClick);
-     firstCardClicked = null;
-     secondCardClicked = null;
-     matches++;
-     attempts++;
-    //  console.log(attempts);
-     displayStats();
-     if (maxMatch === matches) {
-       document.querySelector(".modal-overlay").classList.remove("hidden");
-     }
-   } else {
-     setTimeout(function(){
-    firstCardClicked.classList.remove("hidden");
-    secondCardClicked.classList.remove("hidden");
-    gameCards.addEventListener("click", handleClick);
-       firstCardClicked = null;
-       secondCardClicked = null;
-     }, 1500);
-     attempts++;
-    //  console.log(attempts);
-     displayStats();
-   }
-  //  displayStats();
- }
+  if (!firstCardClicked) {
+    firstCardClicked = event.target;
+    firstCardClasses = firstCardClicked.previousElementSibling.className;
+  } else {
+    secondCardClicked = event.target;
+    secondCardClasses = secondCardClicked.previousElementSibling.className;
+    gameCards.removeEventListener("click", handleClick);
+    if (firstCardClasses === secondCardClasses) {
+      gameCards.addEventListener("click", handleClick);
+      firstCardClicked = null;
+      secondCardClicked = null;
+      matches++;
+      attempts++;
+      //  console.log(attempts);
+      displayStats();
+      if (maxMatch === matches) {
+        document.querySelector(".modal-overlay").classList.remove("hidden");
+      }
+    } else {
+      setTimeout(function () {
+        firstCardClicked.classList.remove("hidden");
+        secondCardClicked.classList.remove("hidden");
+        gameCards.addEventListener("click", handleClick);
+        firstCardClicked = null;
+        secondCardClicked = null;
+      }, 1500);
+      attempts++;
+      //  console.log(attempts);
+      displayStats();
+    }
+    //  displayStats();
+  }
   // displayStats();
 }
