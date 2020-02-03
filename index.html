@@ -9,11 +9,17 @@
 </head>
 
 <body>
-  <div class="modal-overlay hidden modal-overlay-defeat">
+  <div class="modal-overlay hidden">
     <div class="modal-content modal-content-defeat">
        <p> </p>
     </div>
     <button id="button">Play again?</button>
+  </div>
+  <div class="hidden modal-overlay-defeat">
+    <div class="modal-content-defeat">
+      <p> </p>
+    </div>
+    <button id="button-defeat">Play again?</button>
   </div>
   <div class="container">
     <div class="row1">
@@ -42,7 +48,7 @@
         <div id="accuracy">0%</div>
         <div>Timer</div>
         <div id="output">0</div>
-        <button onclick="reset()">Reset Timer</button>
+        <button id="resetTimer"">Reset Timer</button>
       </aside>
       <main class="col-10" id="gameCards">
         <div class="col-2 card">
