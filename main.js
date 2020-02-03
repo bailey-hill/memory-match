@@ -37,12 +37,12 @@ function resetGame() {
 //   timer.reset();
 // }
 
-var secondsLeft = 5;
+var secondsLeft = 3;
 function tick() {
   console.log('tick');
   secondsLeft -= 1;
   if (secondsLeft === 0) {
-    document.querySelector(".modal-overlay").classList.remove("hidden");
+    document.querySelector(".modal-overlay-defeat").classList.remove("hidden");
   } else {
     document.getElementById("output").textContent = secondsLeft;
     window.setTimeout(tick, 1000);
@@ -57,10 +57,14 @@ function resetCards() {
     hiddenCards[i].classList.remove("hidden");
   }
   document.querySelector(".modal-overlay").classList.add("hidden");
+  document.querySelector(".modal-overlay-defeat").classList.add("hidden");
 }
 
 var button = document.querySelector("#button");
 button.addEventListener("click", resetGame);
+
+var buttonDefeat = document.querySelector("#button-defeat");
+buttonDefeat.addEventListener("click", resetGame);
 
 var array = [
   "js-logo",
