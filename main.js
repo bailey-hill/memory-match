@@ -168,3 +168,7 @@ function handleClick(event) {
  }
   // displayStats();
 }
+
+// var newTimeout = setTimeout(function ()){
+//   document.querySelector(".card-front").classList.add("match");
+//       }, 1500);
