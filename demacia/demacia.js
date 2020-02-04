@@ -53,7 +53,7 @@ tick();
 
 function stopTimer() {
   clearTimeout(timer);
-  secondsLeft = 120;
+  secondsLeft = 60;
   timer = window.setTimeout(tick, 1000);
   tick();
 }

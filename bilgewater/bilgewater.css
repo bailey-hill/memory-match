@@ -24,6 +24,10 @@ body {
   background-size: contain;
   background-color: black;
 }
+
+.card-back:hover {
+  box-shadow: 0 8px 16px 0 rgb(255, 255, 255), 0 6px 20px 0 rgb(255, 255, 255);
+}
 .card-back {
   background-image: url(../assets/images/icon.png);
   background-color: black;
