@@ -7,12 +7,15 @@
 
   position: relative;
 }
-body {
+/* body { */
   /* background-image: url(./assets/images/attachment.jpg); */
-  background-image: url(./assets/images/c-o-animated-ionia\ \(1\).gif);
+  /* background-image: url(./assets/images/c-o-animated-ionia.webm);
   background-size: 110%;
   background-repeat: no-repeat;
-}
+} */
+
+
+
 .card-front, .card-back {
   height: 100%;
   width: 100%;
@@ -239,6 +242,15 @@ justify-content: center;
 
 header > img {
   width: 150px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
 
 @font-face {

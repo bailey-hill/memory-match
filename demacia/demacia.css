@@ -233,6 +233,15 @@ header > img {
   width: 150px;
 }
 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
 @font-face {
   src: url("https://fonts.googleapis.com/css?family=Ruslan+Display&display=swap");
   font-family: 'Ruslan Display';
