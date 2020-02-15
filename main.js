@@ -16,26 +16,6 @@ function resetGame() {
   stopTimer();
 }
 
-// var timer;
-// var output;
-// var game;
-
-// function init(){
-//   game = new Scene();
-//   output = document.getElementById("output");
-//   timer.reset();
-//   game.start();
-// }
-
-// function update(){
-//   game.hide();
-//   currentTime = timer.getElapsedTime();
-//   output.innerHTML = currentTime;
-// }
-
-// function reset(){
-//   timer.reset();
-// }
 var timer;
 var secondsLeft = 100;
 function tick() {
@@ -43,12 +23,16 @@ function tick() {
   secondsLeft -= 1;
   if (secondsLeft === 0) {
     document.querySelector(".modal-overlay-defeat").classList.remove("hidden");
-  } else {
+    stopTimer();
+  } if (maxMatch === matches){
+    document.querySelector(".modal-overlay-defeat").classList.add("hidden");
+  }
+  else {
     document.getElementById("output").textContent = secondsLeft;
     timer = window.setTimeout(tick, 1000);
   }
 };
-//document.addEventListener('DOMContentLoaded',tick,false);
+
 tick();
 
 function stopTimer() {
@@ -132,7 +116,6 @@ function handleClick(event) {
   if(event.target.className.indexOf("card-back") === -1) {
     return;
   }
-  // console.log(event.target);
   event.target.className = "card-back" + " hidden";
  if(!firstCardClicked) {
    firstCardClicked = event.target;
@@ -147,7 +130,6 @@ function handleClick(event) {
      secondCardClicked = null;
      matches++;
      attempts++;
-    //  console.log(attempts);
      displayStats();
      if (maxMatch === matches) {
        document.querySelector(".modal-overlay").classList.remove("hidden");
@@ -161,14 +143,7 @@ function handleClick(event) {
        secondCardClicked = null;
      }, 1500);
      attempts++;
-    //  console.log(attempts);
      displayStats();
    }
-  //  displayStats();
  }
-  // displayStats();
 }
-
-// var newTimeout = setTimeout(function ()){
-//   document.querySelector(".card-front").classList.add("match");
-//       }, 1500);
