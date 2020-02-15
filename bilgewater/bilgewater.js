@@ -13,15 +13,16 @@ function resetGame() {
   document.querySelector("#accuracy").textContent = 0;
   document.querySelector("#gamesPlayed").textContent = ++gamesPlayed;
   resetCards();
-  stopTimer();
+  startTimer();
 }
 
 var timer;
-var secondsLeft = 30;
+var secondsLeft = 35;
 function tick() {
   console.log('tick');
   secondsLeft -= 1;
   if (secondsLeft === 0) {
+    stopTimer();
     document.querySelector(".modal-overlay-defeat").classList.remove("hidden");
     stopTimer();
   } if (maxMatch === matches) {
@@ -29,17 +30,18 @@ function tick() {
   }
   else {
     document.getElementById("output").textContent = secondsLeft;
-    timer = window.setTimeout(tick, 1000);
   }
 };
 
-tick();
+function startTimer() {
+  timer = window.setInterval(tick, 1000);
+}
+
+startTimer();
 
 function stopTimer() {
-  clearTimeout(timer);
-  secondsLeft = 30;
-  timer = window.setTimeout(tick, 1000);
-  tick();
+  clearInterval(timer);
+  secondsLeft = 35;
 }
 
 function resetCards() {
