@@ -13,17 +13,17 @@ A JavaScript application for gamers who want to play a League of Legends themed 
 Try the application live at https://memory-match.baileyohill.com/
 
 ## Features
-- User Can View Game.
-- User Can Flip Cards.
-- User can Match Two Cards.
-- User Can Win Game.
-- User Can View Stats.
-- User Can Reset Game and Play Again.
+- User can view game.
+- User can flip cards.
+- User can match two cards.
+- User can win game.
+- User can view stats.
+- User can reset game and play again.
 - User can switch between three difficulties.
 - User can race timer to win.
 
 ## Preview
-![alt text](./image/mem-match.gif)
+![alt text](./image/memory-match2.gif)
 
 ## Development
 ### Getting Started
