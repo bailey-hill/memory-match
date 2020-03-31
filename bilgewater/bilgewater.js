@@ -19,7 +19,6 @@ function resetGame() {
 var timer;
 var secondsLeft = 35;
 function tick() {
-  console.log('tick');
   secondsLeft -= 1;
   if (secondsLeft === 0) {
     stopTimer();
