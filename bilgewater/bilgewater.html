@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>LFZ Memory Match</title>
+  <title>League of Legends Memory Match</title>
   <link href="https://fonts.googleapis.com/css?family=Ruslan+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../grid.css">
   <link rel="stylesheet" href="bilgewater.css">
@@ -17,7 +17,7 @@
       <h2>
         Victory
       </h2>
-      <button id="button"><br />Play again?</button>
+      <button class="pointer" id="button"><br />Play again?</button>
     </div>
   </div>
   <div class="hidden modal-overlay-defeat">
@@ -25,7 +25,7 @@
       <h2>
         Defeat
       </h2>
-      <button id="button-defeat"><br />Play again?</button>
+      <button class="pointer" id="button-defeat"><br />Play again?</button>
     </div>
   </div>
   <div class="container">
@@ -37,9 +37,9 @@
         </h1>
         <nav class="navbar navbar-light bg-light">
           <form class="form-inline">
-            <a href="../index.html"><button class="btn btn-outline-success" type="button">Easy</button></a>
-            <a href="../demacia/demacia.html"><button class="btn btn-outline-success" type="button">Medium</button></a>
-            <a href="bilgewater.html"><button class="btn btn-outline-success" type="button">Hard</button></a>
+            <a href="../index.html"><button class="btn btn-outline-success pointer" type="button">Easy</button></a>
+            <a href="../demacia/demacia.html"><button class="btn btn-outline-success pointer" type="button">Medium</button></a>
+            <a href="bilgewater.html"><button class="btn btn-outline-success pointer" type="button">Hard</button></a>
           </form>
         </nav>
       </header>
@@ -57,7 +57,7 @@
         <div>Timer</div>
         <div id="output">35</div>
       </aside>
-      <main class="col-10" id="gameCards">
+      <main class="col-10 pointer" id="gameCards">
         <div class="col-2 card">
           <div class="card-front"></div>
           <div class="card-back"></div>

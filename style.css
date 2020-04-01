@@ -7,6 +7,9 @@
 
   position: relative;
 }
+.pointer {
+  cursor: pointer;
+}
 .card-front, .card-back {
   height: 100%;
   width: 100%;
