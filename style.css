@@ -4,12 +4,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-
+  cursor: pointer;
   position: relative;
 }
-.pointer {
-  cursor: pointer;
-}
+
 .card-front, .card-back {
   height: 100%;
   width: 100%;
@@ -106,7 +104,7 @@ header {
 }
 h2 {
   color: white;
-  font-size: x-large;
+  font-size: 75px;
   font-family: 'Ruslan Display';
   margin: 0;
 }
