@@ -22,6 +22,15 @@
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
+
+.difficulty-hover {
+  transition: transform .2s;
+}
+
+.difficulty-hover:hover {
+  transform: scale(1.1);
+}
+
 .card-back:hover {
   box-shadow: 0 8px 16px 0 rgb(255, 255, 255), 0 6px 20px 0 rgb(255, 255, 255);
   transform: scale(1.2, 1.2);
