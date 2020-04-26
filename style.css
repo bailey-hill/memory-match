@@ -198,3 +198,9 @@ header > img {
     height: 75px;
   }
 }
+
+/* @media only screen and (max-width: 768px) {
+  .card {
+    width: 25%;
+  }
+} */
