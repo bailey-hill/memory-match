@@ -199,8 +199,27 @@ header > img {
   }
 }
 
-/* @media only screen and (max-width: 768px) {
-  .card {
-    width: 25%;
+.mob {
+  z-index: 0;
+  display: none;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 415px) {
+  .mob1  {
+      background-image: url(./assets/images/mob2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
   }
-} */
+  video {
+      display: none;
+      visibility: hidden;
+      z-index: 0;
+  }
+}
