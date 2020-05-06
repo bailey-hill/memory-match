@@ -182,6 +182,7 @@ h2 {
 header > img {
   width: 150px;
 }
+
 #myBackground {
   position: fixed;
   right: 0;
@@ -189,8 +190,8 @@ header > img {
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
-  src: url(./assets/images/c-o-ionia-frame-1.jpg);
 }
+
 @font-face {
   src: url("https://fonts.googleapis.com/css?family=Ruslan+Display&display=swap");
   font-family: 'Ruslan Display';
